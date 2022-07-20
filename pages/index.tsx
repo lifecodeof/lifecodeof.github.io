@@ -14,11 +14,14 @@ const Home: NextPage = () => {
       <Head>
         <title>Semih Koyuncu</title>
         <link rel="icon" href="/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true"/>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"/>
       </Head>
 
-      <nav className='
-        flex justify-center fixed w-full p-2 z-10
-        backdrop-filter backdrop-blur border-b border-gray-400
+      <nav className='text-sm [&>a]:mx-2
+        flex justify-center fixed w-full p-2 z-20
+        backdrop-blur border-b border-gray-400
         '>
             <a href="#projects">Projects</a>
       </nav>
@@ -30,7 +33,7 @@ const Home: NextPage = () => {
         </section>
         <section id="projects">
           <h1>Projects</h1>
-          <div className="mt-3 mx-4 lg:mx-auto lg:w-2/3 grid grid-cols-2 gap-3">
+          <div className="mt-3 mx-aut w-full sm:w-4/5 md:w-3/4 lg:w-2/3 grid grid-cols-2 gap-3">
             {projects.map(p => <ProjectCard {...p} key={p.title} />)}
           </div>
         </section>

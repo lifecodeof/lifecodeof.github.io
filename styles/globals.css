@@ -11,4 +11,7 @@
 
 html {
     scroll-behavior: smooth;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: larger;
 }
