@@ -40,7 +40,7 @@ const Home: NextPage = () => {
         <p>Semih Koyuncu</p>
         <div className='flex [&>*]:mx-1'>
           <a href="https://github.com/lifecodeof"><Image src={github} alt="github" width={32} height={32}/></a>
-          <a href="https://linkedin.com"><Image src={linkedin} alt="linkedin" width={32} height={32}/></a>
+          <a href="https://linkedin.com/in/lifecodeof"><Image src={linkedin} alt="linkedin" width={32} height={32}/></a>
         </div>
       </footer>
     </>
