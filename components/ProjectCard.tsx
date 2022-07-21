@@ -7,7 +7,7 @@ export const ProjectCard: FC<Project> = ({ title, desc, link, image }: Project) 
         <article className="group relative border border-gray-500 dark:border-gray-400">
             <Image layout="responsive" src={image} alt={title} />
             <div className="absolute inset-0 z-10 bg-white dark:bg-black
-            bg-opacity-0 group-hover:bg-opacity-80 touch:bg-opacity-80
+            !bg-opacity-0 group-hover:!bg-opacity-80 touch:!bg-opacity-80
             group-hover:backdrop-blur touch:backdrop-blur
             transition-all duration-500
             " />

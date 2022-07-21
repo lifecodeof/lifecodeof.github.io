@@ -16,7 +16,7 @@ const Home: NextPage = () => {
       </Head>
 
       <nav className='text-sm [&>a]:mx-2
-        flex justify-center fixed w-full p-2 z-20
+        flex justify-center fixed w-full p-2 z-50
         backdrop-blur border-b border-gray-400
         '>
             <a href="#home">Home</a>
