@@ -5,11 +5,5 @@
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-}
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
+  @apply max-w-lg mx-auto
 }

@@ -13,33 +13,30 @@ const Home: NextPage = () => {
     <>
       <Head>
         <title>Semih Koyuncu</title>
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="preconnect" href="https://fonts.googleapis.com"/>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true"/>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"/>
       </Head>
 
       <nav className='text-sm [&>a]:mx-2
         flex justify-center fixed w-full p-2 z-20
         backdrop-blur border-b border-gray-400
         '>
+            <a href="#home">Home</a>
             <a href="#projects">Projects</a>
       </nav>
 
       <main className={styles.main}>
-        <section className="justify-center">
+        <section id="home" className="justify-center">
           <h1 className='text-xl'>Semih Koyuncu</h1>
           <p className='text-sm text-gray-400'>Full Stack Developer</p>
         </section>
         <section id="projects">
           <h1>Projects</h1>
-          <div className="mt-3 mx-aut w-full sm:w-4/5 md:w-3/4 lg:w-2/3 grid grid-cols-2 gap-3">
+          <div className="mt-3 px-3 grid grid-cols-1 sm:grid-cols-2 gap-3 w-full">
             {projects.map(p => <ProjectCard {...p} key={p.title} />)}
           </div>
         </section>
       </main>
 
-      <footer className='m-4 flex justify-around'>
+      <footer className='p-4  flex justify-between max-w-lg mx-auto'>
         <p>Semih Koyuncu</p>
         <div className='flex [&>*]:mx-1'>
           <a href="https://github.com/lifecodeof"><Image src={github} alt="github" width={32} height={32}/></a>
