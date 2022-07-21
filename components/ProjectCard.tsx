@@ -6,7 +6,7 @@ export const ProjectCard: FC<Project> = ({ title, desc, link, image }: Project) 
     return (
         <article className="group relative border border-gray-400">
             <Image layout="responsive" src={image} alt={title} />
-            <div className="absolute inset-0 z-10 bg-black
+            <div className="absolute inset-0 z-10 bg-white dark:bg-black
             bg-opacity-0 group-hover:bg-opacity-80 touch:bg-opacity-80
             group-hover:backdrop-blur touch:backdrop-blur
             transition-all duration-500
@@ -15,7 +15,7 @@ export const ProjectCard: FC<Project> = ({ title, desc, link, image }: Project) 
                 transition-all duration-500
                 touch:opacity-100 opacity-0 group-hover:opacity-100"
                  href={link} target="_blank" rel="noreferrer">
-                <h2 className="text-white">{title} &#10230;</h2>
+                <h2>{title} &#10230;</h2>
                 <p className="text-gray-400 mt-4">{desc}</p>
             </a>
         </article>
