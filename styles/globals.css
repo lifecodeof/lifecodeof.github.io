@@ -7,6 +7,10 @@
         background-color: #131313;
         color:white;
     }
+
+    :root {
+        color-scheme: dark;
+    }
 }
 
 html {
