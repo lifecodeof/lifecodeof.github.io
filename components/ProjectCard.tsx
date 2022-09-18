@@ -5,7 +5,7 @@ import { Project, techIcons } from "../assets/projects"
 type techParam = { tech: string }
 const Tech: FC<techParam> = ({ tech }: techParam) => (
     <div className="inline mr-2">
-        {tech in techIcons ? <img className="inline w-4 h-4" src={techIcons[tech]} alt="icon" /> : ""} {tech}
+        {tech in techIcons ? <img className="inline h-4" src={techIcons[tech]} alt="icon" /> : ""} {tech}
     </div>
 )
 
