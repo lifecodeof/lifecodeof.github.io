@@ -19,8 +19,8 @@ const Home: NextPage = () => {
         flex justify-center fixed w-full p-2 z-50
         backdrop-blur border-b border-gray-400
         '>
-            <a href="#home">Home</a>
-            <a href="#projects">Projects</a>
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
       </nav>
 
       <main className={styles.main}>
@@ -30,7 +30,7 @@ const Home: NextPage = () => {
         </section>
         <section id="projects">
           <h1>Projects</h1>
-          <div className="mt-3 px-3 grid grid-cols-1 sm:grid-cols-2 gap-3 w-full">
+          <div className="mt-3 px-3 flex flex-col gap-3 w-full">
             {projects.map(p => <ProjectCard {...p} key={p.title} />)}
           </div>
         </section>
@@ -39,8 +39,8 @@ const Home: NextPage = () => {
       <footer className='p-4  flex justify-between max-w-lg mx-auto'>
         <p>Semih Koyuncu</p>
         <div className='flex [&>*]:mx-1'>
-          <a href="https://github.com/lifecodeof"><Image src={github} alt="github" width={32} height={32}/></a>
-          <a href="https://linkedin.com/in/lifecodeof"><Image src={linkedin} alt="linkedin" width={32} height={32}/></a>
+          <a href="https://github.com/lifecodeof"><Image src={github} alt="github" width={32} height={32} /></a>
+          <a href="https://linkedin.com/in/lifecodeof"><Image src={linkedin} alt="linkedin" width={32} height={32} /></a>
         </div>
       </footer>
     </>
