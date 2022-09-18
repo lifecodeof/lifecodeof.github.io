@@ -1,15 +1,10 @@
 import Image from "next/image"
 import React, { FC } from "react"
-import { Project, techIcons } from "../assets/projects"
+import { Project } from "../assets/projects"
+import { iconize } from "./WIcon"
 
-type techParam = { tech: string }
-const Tech: FC<techParam> = ({ tech }: techParam) => (
-    <div className="inline mr-2">
-        {tech in techIcons ? <img className="inline h-4" src={techIcons[tech]} alt="icon" /> : ""} {tech}
-    </div>
-)
 
-export const ProjectCard: FC<Project> = ({ title, desc, link, image, techStack }: Project) => {
+export const ProjectCard: FC<Project> = ({ title, desc, link, image, techStack, flags }) => {
     return (
         <article className="group relative border border-gray-500 dark:border-gray-400 w-full">
             <Image layout="responsive" src={image} alt={title} />
@@ -22,13 +17,16 @@ export const ProjectCard: FC<Project> = ({ title, desc, link, image, techStack }
                 transition-all duration-500
                 opacity-0 touch:opacity-100 group-hover:opacity-100"
                 href={link} target="_blank" rel="noreferrer">
-                <h2>{title} &#10230;</h2>
+                <div className="flex justify-between flex-wrap">
+                    <h2>{title} &#10230;</h2>
+                    <span>{iconize(flags)}</span>
+                </div>
                 <p className="text-gray-500 dark:text-gray-400">{desc}</p>
                 <div className="border border-dashed mr-4 mb-4 mt-2 hidden sm:block">
                     <ul className="ml-4 my-3">
                         {Object.keys(techStack).sort().map((k, key1) =>
                             <li key={key1} className="">{k}:&nbsp;
-                                {techStack[k].map((t, key2) => <Tech tech={t} key={key2} />)}
+                                {iconize(techStack[k])}
                             </li>
                         )}
                     </ul>
