@@ -1,15 +1,15 @@
-import Image, { StaticImageData } from "next/image"
+import Image from "next/image"
 import React, { FC } from "react"
+import { Project, techIcons } from "../assets/projects"
 
-export type Project = {
-    title: string,
-    desc: string,
-    link: string,
-    image: string | StaticImageData,
-    // techStack: Record<string, string>,
-}
+type techParam = { tech: string }
+const Tech: FC<techParam> = ({ tech }: techParam) => (
+    <div className="inline mr-2">
+        {tech in techIcons ? <img className="inline w-4 h-4" src={techIcons[tech]} alt="icon" /> : ""} {tech}
+    </div>
+)
 
-export const ProjectCard: FC<Project> = ({ title, desc, link, image }: Project) => {
+export const ProjectCard: FC<Project> = ({ title, desc, link, image, techStack }: Project) => {
     return (
         <article className="group relative border border-gray-500 dark:border-gray-400 w-full">
             <Image layout="responsive" src={image} alt={title} />
@@ -24,6 +24,15 @@ export const ProjectCard: FC<Project> = ({ title, desc, link, image }: Project) 
                 href={link} target="_blank" rel="noreferrer">
                 <h2>{title} &#10230;</h2>
                 <p className="text-gray-500 dark:text-gray-400">{desc}</p>
+                <div className="border border-dashed mr-4 mb-4 mt-2 hidden sm:block">
+                    <ul className="ml-4 my-3">
+                        {Object.keys(techStack).sort().map((k, key1) =>
+                            <li key={key1} className="">{k}:&nbsp;
+                                {techStack[k].map((t, key2) => <Tech tech={t} key={key2} />)}
+                            </li>
+                        )}
+                    </ul>
+                </div>
             </a>
         </article>
     )
