@@ -7,7 +7,7 @@ export const WIcon: FC<{ children: string }> = ({ children: c }) => {
         (
             icons[c].startsWith("http") || icons[c].startsWith("/") ?
                 <img className="inline h-4" src={icons[c]} alt="icon" /> :
-                <span className="inline h-4 material-symbols-sharp align-middle text-base">{icons[c]}</span>
+                <span className="!inline h-4 material-symbols-sharp align-middle !text-base">{icons[c]}</span>
         ) : ""
 
     return (
