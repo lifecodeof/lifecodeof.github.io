@@ -25,8 +25,8 @@ export const projects: Project[] = [
         flags: ["Production"],
         image: okultableti.src,
         techStack: {
-            backend: ["Laravel"],
-            frontend: ["HTML", "Vue.js"]
+            Backend: ["Laravel"],
+            Frontend: ["HTML", "Vue.js"]
         },
         links: {},
     },
@@ -37,9 +37,9 @@ export const projects: Project[] = [
         image: arcades.src,
         flags: ["Open Source"],
         techStack: {
-            backend: ["Express.js"],
-            frontend: ["React", "MUI"],
-            web3: ["OpenZeppelin"]
+            Backend: ["Express.js"],
+            Frontend: ["React", "MUI"],
+            "Web3 Contract": ["OpenZeppelin"]
         },
         links: { github: "https://github.com/lifecodeof/arcades" },
     },
@@ -50,7 +50,7 @@ export const projects: Project[] = [
         image: portfolio.src,
         flags: ["Open Source"],
         techStack: {
-            frontend: ["React", "Tailwind CSS"],
+            Frontend: ["React", "Tailwind CSS"],
         },
         links: { github: "https://github.com/lifecodeof/portfolio" },
     }
