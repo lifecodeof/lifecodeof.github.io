@@ -41,7 +41,7 @@ export const projects: Project[] = [
             frontend: ["React", "MUI"],
             web3: ["OpenZeppelin"]
         },
-        links: { repo: "https://github.com/lifecodeof/arcades" },
+        links: { github: "https://github.com/lifecodeof/arcades" },
     },
     {
         title: "My Portfolio",
@@ -52,7 +52,7 @@ export const projects: Project[] = [
         techStack: {
             frontend: ["React", "Tailwind CSS"],
         },
-        links: { repo: "https://github.com/lifecodeof/portfolio" },
+        links: { github: "https://github.com/lifecodeof/portfolio" },
     }
 ]
 
