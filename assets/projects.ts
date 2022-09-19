@@ -11,7 +11,7 @@ export type Project = {
     title: string,
     desc: string,
     link: string,
-    image: string | StaticImageData,
+    image: string,
     techStack: Record<string, string[]>,
     flags: string[],
     links: Record<string, string>,
@@ -23,7 +23,7 @@ export const projects: Project[] = [
         desc: "Online live teaching platform.",
         link: "https://okultableti.com",
         flags: ["Production"],
-        image: okultableti,
+        image: okultableti.src,
         techStack: {
             backend: ["Laravel"],
             frontend: ["HTML", "Vue.js"]
@@ -34,7 +34,7 @@ export const projects: Project[] = [
         title: "Arcades",
         desc: "Customizable and recyclable NFT's.",
         link: "https://arcades.netlify.app",
-        image: arcades,
+        image: arcades.src,
         flags: ["Open Source"],
         techStack: {
             backend: ["Express.js"],
@@ -47,7 +47,7 @@ export const projects: Project[] = [
         title: "My Portfolio",
         desc: "This website.",
         link: "http://lifecodeof.github.io",
-        image: portfolio,
+        image: portfolio.src,
         flags: ["Open Source"],
         techStack: {
             frontend: ["React", "Tailwind CSS"],
