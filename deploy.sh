@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 pushd $(dirname $0) > /dev/null # set cwd to project root
 
 # build project
