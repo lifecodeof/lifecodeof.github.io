@@ -3,10 +3,10 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { ProjectCard } from '../components/ProjectCard'
 import styles from '../styles/Home.module.css'
-import { projects } from "../assets/projects";
+import { projects } from "../lib/projects"
 
-import github from "../assets/social/github.svg"
-import linkedin from "../assets/social/linkedin.svg"
+const github = "/assets/social/linkedin.svg"
+const linkedin = "/assets/social/linkedin.svg"
 
 const Home: NextPage = () => {
   return (
@@ -39,8 +39,8 @@ const Home: NextPage = () => {
       <footer className='p-4  flex justify-between max-w-lg mx-auto'>
         <p>Semih Koyuncu</p>
         <div className='flex [&>*]:mx-1'>
-          <a href="https://github.com/lifecodeof"><Image src={github} alt="github" width={32} height={32} /></a>
-          <a href="https://linkedin.com/in/lifecodeof"><Image src={linkedin} alt="linkedin" width={32} height={32} /></a>
+          <a href="https://github.com/lifecodeof"><img src={github} alt="github" width={32} height={32} /></a>
+          <a href="https://linkedin.com/in/lifecodeof"><img src={linkedin} alt="linkedin" width={32} height={32} /></a>
         </div>
       </footer>
     </>

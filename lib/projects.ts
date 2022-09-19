@@ -1,12 +1,3 @@
-import okultableti from "./projects/okultableti.png"
-import arcades from "./projects/arcades.png"
-import portfolio from "./projects/portfolio.png"
-
-import openZeppelin from "./tech/OpenZeppelin.png"
-
-import { StaticImageData } from "next/image"
-
-
 export type Project = {
     title: string,
     desc: string,
@@ -23,7 +14,7 @@ export const projects: Project[] = [
         desc: "Online live teaching platform.",
         link: "https://okultableti.com",
         flags: ["Production"],
-        image: okultableti.src,
+        image: "/assets/projects/okultableti.png",
         techStack: {
             Backend: ["Laravel"],
             Frontend: ["HTML", "Vue.js"]
@@ -34,7 +25,7 @@ export const projects: Project[] = [
         title: "Arcades",
         desc: "Customizable and recyclable NFT's.",
         link: "https://arcades.netlify.app",
-        image: arcades.src,
+        image: "/assets/projects/arcades.png",
         flags: ["Open Source"],
         techStack: {
             Backend: ["Express.js"],
@@ -47,7 +38,7 @@ export const projects: Project[] = [
         title: "My Portfolio",
         desc: "This website.",
         link: "http://lifecodeof.github.io",
-        image: portfolio.src,
+        image: "/assets/projects/portfolio.png",
         flags: ["Open Source"],
         techStack: {
             Frontend: ["React", "Tailwind CSS"],
@@ -65,10 +56,11 @@ export const icons: Record<string, string> = {
     "MUI": "https://user-images.githubusercontent.com/25181517/189716630-fe6c084c-6c66-43af-aa49-64c8aea4a5c2.png",
     "Node.js": "https://user-images.githubusercontent.com/25181517/183568594-85e280a7-0d7e-4d1a-9028-c8c2209e073c.png",
     "Laravel": "https://laravel.com/img/logomark.min.svg",
-    "OpenZeppelin": openZeppelin.src,
+    "OpenZeppelin": "/assets/tech/OpenZeppelin.png",
     "Tailwind CSS": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2048px-Tailwind_CSS_Logo.svg.png",
 
     // Flags
     "Open Source": "https://github.githubassets.com/favicons/favicon-dark.svg",
     "Production": "public",
 }
+

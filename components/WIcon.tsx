@@ -1,5 +1,5 @@
 import React, { FC } from "react"
-import { icons } from "../assets/projects"
+import { icons } from "../lib/projects"
 
 
 export const WIcon: FC<{ children: string }> = ({ children: c }) => {
