@@ -19,7 +19,7 @@ export const projects: Project[] = [
         title: "Okultableti",
         desc: "Online live teaching platform.",
         link: "https://okultableti.com",
-        flags: ["Production", "Active"],
+        flags: ["Production"],
         image: okultableti,
         techStack: {
             backend: ["Laravel"],
@@ -56,5 +56,4 @@ export const icons: Record<string, string> = {
     // Flags
     "Open Source": "https://github.githubassets.com/favicons/favicon-dark.svg",
     "Production": "public",
-    "Active": "settings",
 }
