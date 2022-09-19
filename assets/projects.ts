@@ -53,7 +53,7 @@ export const projects: Project[] = [
         techStack: {
             frontend: ["React", "Tailwind CSS"],
         },
-        links: { repo: "https://github.com/lifecodeof/arcades" },
+        links: { repo: "https://github.com/lifecodeof/portfolio" },
     }
 ]
 
