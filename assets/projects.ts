@@ -2,7 +2,6 @@ import okultableti from "./projects/okultableti.png"
 import arcades from "./projects/arcades.png"
 import portfolio from "./projects/portfolio.png"
 
-// import tailwindcss from "./tech/tailwindcss.svg"
 import openZeppelin from "./tech/OpenZeppelin.png"
 
 import { StaticImageData } from "next/image"
