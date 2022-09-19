@@ -5,7 +5,7 @@ import { ProjectCard } from '../components/ProjectCard'
 import styles from '../styles/Home.module.css'
 import { projects } from "../lib/projects"
 
-const github = "/assets/social/linkedin.svg"
+const github = "/assets/social/github.svg"
 const linkedin = "/assets/social/linkedin.svg"
 
 const Home: NextPage = () => {
