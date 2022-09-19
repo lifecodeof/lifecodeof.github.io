@@ -7,3 +7,17 @@
   min-height: 100vh;
   @apply max-w-lg mx-auto
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.main section:first-of-type {
+  animation: fadeIn 5s;
+}
