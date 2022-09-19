@@ -1,6 +1,10 @@
 import okultableti from "./projects/okultableti.png"
 import arcades from "./projects/arcades.png"
+import portfolio from "./projects/portfolio.png"
+
+// import tailwindcss from "./tech/tailwindcss.svg"
 import openZeppelin from "./tech/OpenZeppelin.png"
+
 import { StaticImageData } from "next/image"
 
 
@@ -30,13 +34,24 @@ export const projects: Project[] = [
     {
         title: "Arcades",
         desc: "Customizable and recyclable NFT's.",
-        link: "https://arcades.netlify.app/",
+        link: "https://arcades.netlify.app",
         image: arcades,
         flags: ["Open Source"],
         techStack: {
             backend: ["Express.js"],
             frontend: ["React", "MUI"],
             web3: ["OpenZeppelin"]
+        },
+        links: { repo: "https://github.com/lifecodeof/arcades" },
+    },
+    {
+        title: "My Portfolio",
+        desc: "This website.",
+        link: "http://lifecodeof.github.io",
+        image: portfolio,
+        flags: ["Open Source"],
+        techStack: {
+            frontend: ["React", "Tailwind CSS"],
         },
         links: { repo: "https://github.com/lifecodeof/arcades" },
     }
@@ -52,6 +67,7 @@ export const icons: Record<string, string> = {
     "Node.js": "https://user-images.githubusercontent.com/25181517/183568594-85e280a7-0d7e-4d1a-9028-c8c2209e073c.png",
     "Laravel": "https://laravel.com/img/logomark.min.svg",
     "OpenZeppelin": openZeppelin.src,
+    "Tailwind CSS": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2048px-Tailwind_CSS_Logo.svg.png",
 
     // Flags
     "Open Source": "https://github.githubassets.com/favicons/favicon-dark.svg",

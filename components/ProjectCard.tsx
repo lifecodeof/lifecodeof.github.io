@@ -7,7 +7,7 @@ import { iconize } from "./WIcon"
 export const ProjectCard: FC<Project> = ({ title, desc, link, image, techStack, flags, links }) => {
     return (
         <article className="group relative my-border w-full">
-            <div className="absolute flex flex-col gap-3  top-4 left-full
+            <div className="absolute hidden sm:flex flex-col gap-3  top-4 left-full
                             -translate-x-full group-hover:translate-x-0 transition-all duration-500">
                 {Object.keys(links).sort().map((k, key) =>
                     <a key={key} href={links[k]} className="px-2 bg-body my-border !border-l-0">{k}</a>
