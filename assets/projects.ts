@@ -11,6 +11,7 @@ export type Project = {
     image: string | StaticImageData,
     techStack: Record<string, string[]>,
     flags: string[],
+    links: Record<string, string>,
 }
 
 export const projects: Project[] = [
@@ -23,7 +24,8 @@ export const projects: Project[] = [
         techStack: {
             backend: ["Laravel"],
             frontend: ["HTML", "Vue.js"]
-        }
+        },
+        links: {},
     },
     {
         title: "Arcades",
@@ -35,7 +37,8 @@ export const projects: Project[] = [
             backend: ["Express.js"],
             frontend: ["React", "MUI"],
             web3: ["OpenZeppelin"]
-        }
+        },
+        links: { repo: "https://github.com/lifecodeof/arcades" },
     }
 ]
 
