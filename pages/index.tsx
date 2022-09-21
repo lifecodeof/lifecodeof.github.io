@@ -1,9 +1,9 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
 import { ProjectCard } from '../components/ProjectCard'
 import styles from '../styles/Home.module.css'
 import { projects } from "../lib/projects"
+import { Readme } from '../components/Readme'
 
 const github = "/assets/social/github.svg"
 const linkedin = "/assets/social/linkedin.svg"
@@ -33,6 +33,10 @@ const Home: NextPage = () => {
           <div className="mt-3 px-3 flex flex-col gap-3 w-full">
             {projects.map(p => <ProjectCard {...p} key={p.title} />)}
           </div>
+        </section>
+        <section id="about">
+          <h1>About me</h1>
+          <Readme />
         </section>
       </main>
 

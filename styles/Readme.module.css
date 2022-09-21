@@ -1,0 +1,15 @@
+.readme {
+    @apply my-border p-4 rounded-md
+}
+
+.readme li {
+    @apply list-disc list-inside indent-4
+}
+
+.readme h3 {
+    @apply text-xl
+}
+
+.readme h5 {
+    @apply text-lg mt-2
+}
