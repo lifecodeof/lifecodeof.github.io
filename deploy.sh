@@ -4,10 +4,10 @@ pushd $(dirname $0) > /dev/null # set cwd to project root
 # build project
 yarn run build
 
-if [[ $? =! 0 ]]; do
+if [[ $? != 0 ]]; then
     echo Project has errors, aborting...
     exit 
-done
+fi
 
 DIR=$(mktemp -d)
 TEMP_GIT=$(mktemp -d)
