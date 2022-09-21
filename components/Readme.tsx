@@ -15,7 +15,7 @@ export const Readme: FC = () => {
                 .then(s => setContent(<Markdown>{s}</Markdown>))
     }, [])
 
-    return <div className={styles.readme} >
+    return <div className={`${styles.readme} my-border p-4 rounded-md`}>
         {content}
     </div>
 }

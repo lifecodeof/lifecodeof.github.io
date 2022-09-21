@@ -1,7 +1,3 @@
-.readme {
-    @apply my-border p-4 rounded-md
-}
-
 .readme li {
     @apply list-disc list-inside indent-4
 }
