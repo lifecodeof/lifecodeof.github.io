@@ -1,33 +1,26 @@
 #!/bin/bash
-pushd $(dirname $0) > /dev/null # set cwd to project root
 
 # build project
 yarn run build
 
 if [[ $? != 0 ]]; then
     echo Project has errors, aborting...
-    exit 
+    exit 1
 fi
 
 DIR=$(mktemp -d)
-TEMP_GIT=$(mktemp -d)
 
-git clone --single-branch --branch production $(git remote get-url origin) $DIR
-mv $DIR/.git $TEMP_GIT
+git clone --depth 1 --single-branch --branch production $(git remote get-url origin) "$DIR"
 
-# replace whole directory
-rm -rf $DIR
-mv out $DIR
+# replace whole directory except .git
+find "$DIR" -maxdepth 1 ! -name '.git' -exec rm -rf {} +
+mv out/* "$DIR"
 
-# reconstrtuct git repo
-mv $TEMP_GIT/.git $DIR
-
-pushd $DIR > /dev/null # set cwd to temp repo root
+pushd "$DIR" > /dev/null # set cwd to temp repo root
     touch .nojekyll
     git add .
     git commit -m "auto deployement"
     git push
 popd > /dev/null
 
-rm -rf $DIR
-popd > /dev/null
+rm -rf "$DIR"
