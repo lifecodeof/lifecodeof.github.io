@@ -1,4 +1,4 @@
-import { icons } from "../lib/projects"
+import { icons } from "@/lib/projects"
 
 
 export const WIcon = ({ children: c }: { children: string }) => {

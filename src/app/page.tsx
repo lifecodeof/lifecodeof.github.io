@@ -1,8 +1,8 @@
 import { Metadata } from 'next'
-import { ProjectCard } from '../components/ProjectCard'
-import { Readme } from '../components/Readme'
-import { projects } from "../lib/projects"
-import styles from '../styles/Home.module.css'
+import { ProjectCard } from '@/components/ProjectCard'
+import { Readme } from '@/components/Readme'
+import { projects } from "@/lib/projects"
+import styles from '@/styles/Home.module.css'
 
 const github = "/assets/social/github.svg"
 const linkedin = "/assets/social/linkedin.svg"

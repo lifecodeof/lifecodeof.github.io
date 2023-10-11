@@ -2,7 +2,7 @@
 
 import Markdown from "marked-react"
 import { useEffect, useState } from "react"
-import styles from '../styles/Readme.module.css'
+import styles from '@/styles/Readme.module.css'
 
 
 export const Readme = () => {
