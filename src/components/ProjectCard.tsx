@@ -1,9 +1,8 @@
-import React, { FC } from "react"
 import { Project } from "../lib/projects"
 import { iconize } from "./WIcon"
 
 
-export const ProjectCard: FC<Project> = ({ title, desc, link, image, techStack, flags, links }) => {
+export const ProjectCard = ({ title, desc, link, image, techStack, flags, links }: Project) => {
     return (
         <article className="group relative my-border w-full isolate">
             <div className="absolute hidden sm:flex flex-col gap-3 -z-10 top-4 left-full

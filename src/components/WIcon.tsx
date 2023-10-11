@@ -1,8 +1,7 @@
-import React, { FC } from "react"
 import { icons } from "../lib/projects"
 
 
-export const WIcon: FC<{ children: string }> = ({ children: c }) => {
+export const WIcon = ({ children: c }: { children: string }) => {
     const icon = c in icons ?
         (
             icons[c].startsWith("http") || icons[c].startsWith("/") ?

@@ -1,5 +1,4 @@
 import { Metadata } from 'next'
-import Head from 'next/head'
 import { ProjectCard } from '../components/ProjectCard'
 import { Readme } from '../components/Readme'
 import { projects } from "../lib/projects"

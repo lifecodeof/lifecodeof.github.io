@@ -1,11 +1,11 @@
 'use client'
 
 import Markdown from "marked-react"
+import { useEffect, useState } from "react"
 import styles from '../styles/Readme.module.css'
-import React, { FC, useEffect, useState } from "react"
 
 
-export const Readme: FC = () => {
+export const Readme = () => {
     const [content, setContent] = useState(
         <h1>Loading...</h1>
     )
