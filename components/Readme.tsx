@@ -1,3 +1,5 @@
+'use client'
+
 import Markdown from "marked-react"
 import styles from '../styles/Readme.module.css'
 import React, { FC, useEffect, useState } from "react"

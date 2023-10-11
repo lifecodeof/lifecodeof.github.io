@@ -1,4 +1,3 @@
-import Image from "next/image"
 import React, { FC } from "react"
 import { Project } from "../lib/projects"
 import { iconize } from "./WIcon"
